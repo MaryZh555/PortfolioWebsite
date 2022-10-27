@@ -6,20 +6,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maria Zhang</title>
+
+    <!-- Bootstrap CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&display=swap" rel="stylesheet">
+    <!-- Custom style -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <!-- Navigation -->
     <header>
-        <nav>
-            <a href="">Home</a>
-            <a href="">About</a>
-            <a href="">Portfolio</a>
-            <a href="">Contacts</a>
+        <nav class="navbar navbar-expand-md navbar-dark text-light fw-light py-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between mx-2" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active px-4" aria-current="page" href="#">Home</a>
+                        <a class="nav-link px-4" href="#">About</a>
+                        <a class="nav-link px-4" href="#">Portfolio</a>
+                        <a class="nav-link px-4">Contacts</a>
+                    </div>
+                    <div class="div">
+                        <button id="theme-btn" class="btn btn-light mt-1 mx-3"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="16" height="16" fill="currentColor" class="bi bi-brightness-high mb-1"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+                            </svg></button>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
-        <section id="home">
+        <!-- Home page -->
+        <!-- <section id="home">
             <div class="home-name">
                 <h1> Maria Zhang</h1>
             </div>
@@ -27,7 +58,21 @@
                 <p>A Web Developer.</p>
                 <button class="cv-btn">Download cv</button>
             </div>
+        </section> -->
+        <section id="home">
+            <div class="container-md text-center ">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-5">
+                        <h1 class="fw-bold"> Maria Zhang</h1>
+                    </div>
+                    <div class="col-5">
+                        <p>A Web Developer.</p>
+                        <button class="cv-btn btn btn-dark">Download cv</button>
+                    </div>
+                </div>
+            </div>
         </section>
+        <!-- About page -->
         <section id="about">
             <div class="about-info">
                 <h2>About me</h2>
@@ -43,7 +88,14 @@
                 </div>
             </div>
         </section>
+        <!-- Portfolio page -->
+        <!-- Contact page -->
     </main>
+    <!-- BootStrap JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
