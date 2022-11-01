@@ -8,6 +8,55 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.bg-gradient-top {
+    position: fixed;
+    content: "";
+    left: -250px;
+    top: -250px;
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    z-index: 1;
+    background-image: linear-gradient(140deg, #f75c64f4, #77f1f78b);
+    box-shadow: 0px 0px 85px 90px #222526 inset;
+}
+
+.bg-gradient-top::after {
+    position: absolute;
+    content: "";
+    left: -2.5px;
+    top: -2.5px;
+    width: 101%;
+    height: 101%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 30px 25px #222526 inset;
+}
+
+.bg-gradient-bottom {
+    position: fixed;
+    content: "";
+    right: -10vw;
+    top: 60vh;
+    width: 550px;
+    height: 550px;
+    border-radius: 50%;
+    z-index: 1;
+    background-image: linear-gradient(-45deg, rgba(224, 103, 216, 0.94), rgba(120, 165, 248, 0.934));
+    box-shadow: 0px 0px 85px 100px #222526 inset;
+}
+
+.bg-gradient-bottom::after {
+    position: absolute;
+    content: "";
+    left: -3px;
+    top: -3px;
+    width: 101%;
+    height: 101%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 30px 25px #222526 inset;
+}
+
+
 /* Navigation */
 
 #theme-btn {
@@ -26,4 +75,9 @@ body {
 
 #home .row p {
     font-size: 40px;
+}
+
+#home, #nav {
+    position: relative;
+    z-index: 2;
 }
